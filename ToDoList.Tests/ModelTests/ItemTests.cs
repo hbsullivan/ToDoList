@@ -11,6 +11,7 @@ namespace ToDoList.Tests
     {
       Item newItem = new Item();
       Assert.AreEqual(typeof(Item), newItem.GetType());
+      
     }
   }
 }
