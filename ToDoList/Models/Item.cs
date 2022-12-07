@@ -17,5 +17,10 @@ namespace ToDoList.Models
       Description = description;
       _instances.Add(this);
     }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
   }
 }
