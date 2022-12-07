@@ -60,6 +60,11 @@ namespace ToDoList.Tests
       //Act
       List<Item> result = Item.GetAll();
 
+      foreach (Item thisItem in result)
+      {
+        Console.WriteLine("Output from empty list  GetAll test: " + thisItem.Description);
+      }
+
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
@@ -76,6 +81,11 @@ namespace ToDoList.Tests
 
       //Act
       List<Item> result = Item.GetAll();
+
+      foreach (Item thisItem in result)
+      {
+        Console.WriteLine("Output from second GetAll test: " + thisItem.Description);
+      }
 
       //Assert
       CollectionAssert.AreEqual(newList, result);
