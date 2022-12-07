@@ -2,6 +2,11 @@ namespace ToDoList.Models
 {
   public class Item
   {
-    // properties, constructors, methods, etc. go here
+    public string Description { get; }
+
+    public Item(string description)
+    {
+      Description = description;
+    }
   }
 }
